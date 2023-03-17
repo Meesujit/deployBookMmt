@@ -1,0 +1,2 @@
+folder setup
+client server architecture
