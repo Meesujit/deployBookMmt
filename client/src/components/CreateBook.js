@@ -26,7 +26,7 @@ const CreateBook = (props) => {
         e.preventDefault();
 
         axios
-            .post("https://3000-grandmaster-empmgmtsuji-evw17paf44h.ws-us90.gitpod.io/api/books", book)
+            .post(`https://3000-grandmaster-empmgmtsuji-evw17paf44h.ws-us90.gitpod.io/api/books`, book)
             .then((res) => {
                 setBook({
 
@@ -61,7 +61,12 @@ const CreateBook = (props) => {
 
                     <div className='col-md-8 m-auto'>
                         <br />
-                        <Link to='/' className='btn btn-outline-warning float-left' >Show Book ShowBookList
+                        <Link to='/show-book' className='btn btn-outline-warning float-left' >Show Book ShowBookList
+                        </Link>
+                    </div>
+                    <div className='col-md-8 m-auto'>
+                        <br />
+                        <Link to='/' className='btn btn-outline-warning float-left'> HomePage
                         </Link>
                     </div>
 
