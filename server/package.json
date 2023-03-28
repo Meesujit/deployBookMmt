@@ -19,7 +19,9 @@
     "mogoose": "^0.0.1-security",
     "mongodb": "^5.1.0",
     "mongoose": "^7.0.0",
-    "nodemon": "^2.0.21",
     "shutdown": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
   }
 }

@@ -5,7 +5,8 @@ import CreateBook from './components/CreateBook';
 import UpdateBookInfo from './components/UpdateBookInfo';
 import ShowBookDetails from './components/ShowBookDetails';
 import ShowBookList from './components/ShowBookList';
-import HomePage from './components/HomePage';
+// import HomePage from './components/HomePage';
+
 
 
 function App() {
@@ -13,11 +14,12 @@ function App() {
    <Router>
     <div>
       <Routes>
-        <Route path="/" exact element={<HomePage/>} />
-      <Route path="/show-book" element={<ShowBookList/>}/>
+        
+      {/* <Route path="/" exact element={<HomePage/>}/> */}
+      <Route path="/" exact element={<ShowBookList/>}/>
         <Route path="/create-book" element={<CreateBook />} />
         <Route path="/edit-book/:id" element={<UpdateBookInfo />} />
-        <Route path="show-book/:id" element={<ShowBookDetails/>} />
+        <Route path="/show-book/:id" element={<ShowBookDetails/>} />
       </Routes>
     </div>
    </Router>
