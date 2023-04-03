@@ -8,10 +8,9 @@ import BookCard from './BookCard'
 function ShowBookList() {
   const [books, setBooks] = useState([])
 
-
   useEffect(() => {
     axios
-      .get(`https://5000-grandmaster-empmgmtsuji-evw17paf44h.ws-us92.gitpod.io/api/books`)
+      .get(`/api/books`)
       .then((res) => {
         setBooks(res.data)
       })

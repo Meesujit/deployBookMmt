@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`https://5000-grandmaster-empmgmtsuji-evw17paf44h.ws-us92.gitpod.io/api/books/${id}`)
+      .get(`/api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`https://5000-grandmaster-empmgmtsuji-evw17paf44h.ws-us92.gitpod.io/api/books/${id}`)
+      .delete(`/api/books/${id}`)
       .then((res) => {
         navigate('/');
       })
